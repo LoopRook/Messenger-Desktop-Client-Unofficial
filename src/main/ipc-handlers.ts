@@ -473,6 +473,7 @@ const BOOLEAN_SETTINGS: Record<BooleanSettingKey, (value: boolean) => void> = {
   startWithSystem: (value) => settings.setStartWithSystem(value),
   hideChatList: (value) => settings.setHideChatList(value),
   hideChatInfo: (value) => settings.setHideChatInfo(value),
+  themeMessenger: (value) => settings.setThemeMessenger(value),
 };
 
 /**
