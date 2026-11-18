@@ -11,6 +11,7 @@ import * as dnd from './do-not-disturb';
 import * as settings from './settings';
 import { showAppDialog } from './app-dialog';
 import { toDisplayVersion } from '../shared/types';
+import { getMarketplaceView, isMarketplaceShowing } from './marketplace';
 
 let messengerView: WebContentsView | null = null;
 let mainWindow: BrowserWindow | null = null;
@@ -58,6 +59,25 @@ function notifyZoomLevelChange(): void {
 }
 
 /**
+ * Give the current zoom level to Messenger and, if it exists,
+ * Marketplace, so the level is the same whichever one is showing.
+ */
+function applyZoom(): void {
+  messengerView?.webContents.setZoomLevel(currentZoomLevel);
+  getMarketplaceView()?.webContents.setZoomLevel(currentZoomLevel);
+}
+
+/** Zoom a freshly created view to the level in use. */
+export function applyCurrentZoom(view: WebContentsView): void {
+  view.webContents.setZoomLevel(currentZoomLevel);
+}
+
+/** The view that is showing: Marketplace when it is, else Messenger. */
+function activeView(): WebContentsView | null {
+  return (isMarketplaceShowing() ? getMarketplaceView() : null) ?? messengerView;
+}
+
+/**
  * Zoom In
  */
 export function zoomIn(): void {
@@ -66,7 +86,7 @@ export function zoomIn(): void {
   currentZoomLevel += 0.5;
   if (currentZoomLevel > 3) currentZoomLevel = 3; // Max 300%
 
-  messengerView.webContents.setZoomLevel(currentZoomLevel);
+  applyZoom();
   notifyZoomLevelChange();
   console.log(`[Menu] Zoom level: ${currentZoomLevel} (${Math.round(100 + currentZoomLevel * 50)}%)`);
 }
@@ -80,7 +100,7 @@ export function zoomOut(): void {
   currentZoomLevel -= 0.5;
   if (currentZoomLevel < -3) currentZoomLevel = -3; // Min 25%
 
-  messengerView.webContents.setZoomLevel(currentZoomLevel);
+  applyZoom();
   notifyZoomLevelChange();
   console.log(`[Menu] Zoom level: ${currentZoomLevel} (${Math.round(100 + currentZoomLevel * 50)}%)`);
 }
@@ -92,23 +112,24 @@ export function zoomReset(): void {
   if (!messengerView) return;
 
   currentZoomLevel = 0;
-  messengerView.webContents.setZoomLevel(0);
+  applyZoom();
   notifyZoomLevelChange();
   console.log('[Menu] Zoom reset to 100%');
 }
 
 /**
- * Reload the Messenger view.
+ * Reload the view that is showing (Messenger, or Marketplace on top).
  */
 export function reloadMessenger(ignoreCache = false): void {
-  if (!messengerView || messengerView.webContents.isDestroyed()) return;
+  const target = activeView();
+  if (!target || target.webContents.isDestroyed()) return;
 
   if (ignoreCache) {
-    messengerView.webContents.reloadIgnoringCache();
+    target.webContents.reloadIgnoringCache();
   } else {
-    messengerView.webContents.reload();
+    target.webContents.reload();
   }
-  console.log(`[Menu] Reloaded Messenger${ignoreCache ? ' (ignoring cache)' : ''}`);
+  console.log(`[Menu] Reloaded the visible view${ignoreCache ? ' (ignoring cache)' : ''}`);
 }
 
 /**
@@ -221,11 +242,7 @@ export function createContextMenu(): Menu {
     {
       label: 'Reload',
       accelerator: 'CmdOrCtrl+R',
-      click: () => {
-        if (messengerView) {
-          messengerView.webContents.reload();
-        }
-      }
+      click: () => reloadMessenger()
     },
     { type: 'separator' as const },
     {

@@ -54,6 +54,7 @@ import * as dnd from './do-not-disturb';
 import * as connectivity from './connectivity';
 import * as appLock from './app-lock';
 import { setOverlay } from './overlays';
+import { toggleMarketplace } from './marketplace';
 import { handleDialogReady, handleDialogResponse } from './app-dialog';
 import { showNotification, closeNotification } from './notifications';
 import { checkForUpdatesInteractive } from './updater';
@@ -411,6 +412,14 @@ function handleMarkAllRead(event: IpcMainEvent): void {
 }
 
 /**
+ * Handle the Marketplace button: title bar only, and not while locked.
+ */
+function handleMarketplaceToggle(event: IpcMainEvent): void {
+  if (!isFromShell(event) || appLock.isLocked()) return;
+  toggleMarketplace();
+}
+
+/**
  * Handle the Retry button on the offline screen.
  */
 function handleConnectionRetry(): void {
@@ -696,6 +705,12 @@ export function registerIpcHandlers(window: BrowserWindow): void {
     createHandler('mark-all-read', handleMarkAllRead)
   );
 
+  // Marketplace button
+  ipcMain.on(
+    'marketplace-toggle',
+    createHandler('marketplace-toggle', handleMarketplaceToggle)
+  );
+
   // Focus window (notification click-to-focus)
   ipcMain.on(
     'focus-window',
@@ -783,6 +798,7 @@ export function unregisterIpcHandlers(): void {
   ipcMain.removeAllListeners('open-external');
   ipcMain.removeAllListeners('go-to-home');
   ipcMain.removeAllListeners('mark-all-read');
+  ipcMain.removeAllListeners('marketplace-toggle');
   ipcMain.removeAllListeners('focus-window');
   ipcMain.removeAllListeners('notification-show');
   ipcMain.removeAllListeners('notification-close');
