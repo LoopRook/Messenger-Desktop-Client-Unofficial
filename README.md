@@ -7,12 +7,14 @@
 **A free, open-source desktop app for Facebook Messenger.**<br>
 Rich notifications, an optional PIN lock, 14 themes and a window that stays out of your way.
 
-[![Latest release](https://img.shields.io/github/v/release/WinTer1165/Messenger-Desktop-Client-Unofficial?style=flat-square&label=release&color=0866ff)](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/WinTer1165/Messenger-Desktop-Client-Unofficial/total?style=flat-square&color=0866ff)](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases)
+This is a fork with a collapsible chat list, themes that cover Messenger itself, mark all as read, and Marketplace in the window.
+
+[![Latest release](https://img.shields.io/github/v/release/LoopRook/Messenger-Desktop-Client-Unofficial?style=flat-square&label=release&color=0866ff)](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/LoopRook/Messenger-Desktop-Client-Unofficial/total?style=flat-square&color=0866ff)](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-0866ff?style=flat-square)](LICENSE)
 [![Platforms](https://img.shields.io/badge/platforms-Windows%20%7C%20macOS%20%7C%20Linux-0866ff?style=flat-square)](#download)
 
-**[Website](https://winter1165.github.io/Webpage-for-Messenger-Desktop-Client-Unofficial/)** · **[Download](#download)** · **[What's new](#whats-new-in-v3)** · **[Screenshots](#screenshots)** · **[Features](#features)** · **[FAQ](#faq)** · **[Build from source](#build-from-source)**
+**[Download](#download)** · **[What's new](#whats-new-in-v3)** · **[Screenshots](#screenshots)** · **[Features](#features)** · **[FAQ](#faq)** · **[Build from source](#build-from-source)**
 
 <br>
 
@@ -21,6 +23,15 @@ Rich notifications, an optional PIN lock, 14 themes and a window that stays out 
 <sub>Unofficial app. Not affiliated with or endorsed by Meta.</sub>
 
 </div>
+
+<br>
+
+## Added in this fork
+
+- **Collapsible chat list**: hide the chat list from the title bar (`Ctrl/Cmd` + `Shift` + `L`)
+- **Themes cover Messenger itself**: chat list, conversation, menus and call windows, not only the title bar
+- **Mark all as read**: one button for every unread chat in the chat list
+- **Marketplace**: Facebook Marketplace in the window, while Messenger keeps running behind it
 
 <br>
 
@@ -48,40 +59,40 @@ Rich notifications, an optional PIN lock, 14 themes and a window that stays out 
   <tr>
     <td align="center" valign="top">
       <br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-Setup-3.0.0.exe"><img src="https://img.shields.io/badge/Installer-x64_%2B_ARM64-0078D4?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDMuNCA5LjggMnY5LjVIMHptMTAuOS0xLjZMMjQgMHYxMS40SDEwLjl6TTAgMTIuNmg5LjhWMjJMMCAyMC42em0xMC45IDBIMjRWMjRsLTEzLjEtMS44eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="Download the Windows installer"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/Installer-x64_%2B_ARM64-0078D4?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDMuNCA5LjggMnY5LjVIMHptMTAuOS0xLjZMMjQgMHYxMS40SDEwLjl6TTAgMTIuNmg5LjhWMjJMMCAyMC42em0xMC45IDBIMjRWMjRsLTEzLjEtMS44eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="Download the Windows installer"></a>
       <br><sub><b>Recommended</b> · updates itself</sub>
       <br><br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-3.0.0-Portable-x64.zip"><img src="https://img.shields.io/badge/Portable-x64-404040?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDMuNCA5LjggMnY5LjVIMHptMTAuOS0xLjZMMjQgMHYxMS40SDEwLjl6TTAgMTIuNmg5LjhWMjJMMCAyMC42em0xMC45IDBIMjRWMjRsLTEzLjEtMS44eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="Download the portable x64 zip"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/Portable-x64-404040?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDMuNCA5LjggMnY5LjVIMHptMTAuOS0xLjZMMjQgMHYxMS40SDEwLjl6TTAgMTIuNmg5LjhWMjJMMCAyMC42em0xMC45IDBIMjRWMjRsLTEzLjEtMS44eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="Download the portable x64 zip"></a>
       <br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-3.0.0-Portable-ARM64.zip"><img src="https://img.shields.io/badge/Portable-ARM64-404040?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDMuNCA5LjggMnY5LjVIMHptMTAuOS0xLjZMMjQgMHYxMS40SDEwLjl6TTAgMTIuNmg5LjhWMjJMMCAyMC42em0xMC45IDBIMjRWMjRsLTEzLjEtMS44eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="Download the portable ARM64 zip"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/Portable-ARM64-404040?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDMuNCA5LjggMnY5LjVIMHptMTAuOS0xLjZMMjQgMHYxMS40SDEwLjl6TTAgMTIuNmg5LjhWMjJMMCAyMC42em0xMC45IDBIMjRWMjRsLTEzLjEtMS44eiIvPjwvc3ZnPg%3D%3D&logoColor=white" alt="Download the portable ARM64 zip"></a>
       <br><sub>No install needed</sub>
       <br><br>
     </td>
     <td align="center" valign="top">
       <br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-3.0.0-arm64.dmg"><img src="https://img.shields.io/badge/Apple_Silicon-M1_and_newer-111111?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Apple Silicon Macs"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/Apple_Silicon-M1_and_newer-111111?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Apple Silicon Macs"></a>
       <br><sub><b>Most Macs</b> from late 2020 on</sub>
       <br><br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-3.0.0-x64.dmg"><img src="https://img.shields.io/badge/Intel-x64-404040?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Intel Macs"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/Intel-x64-404040?style=for-the-badge&logo=apple&logoColor=white" alt="Download for Intel Macs"></a>
       <br><sub>Older Intel Macs</sub>
       <br><br>
     </td>
     <td align="center" valign="top">
       <br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-3.0.0-x86_64.AppImage"><img src="https://img.shields.io/badge/AppImage-x86__64-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download the x86_64 AppImage"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/AppImage-x86__64-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download the x86_64 AppImage"></a>
       <br><sub><b>Any distribution</b> · updates itself</sub>
       <br><br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-3.0.0-amd64.deb"><img src="https://img.shields.io/badge/.deb-amd64-A81D33?style=for-the-badge&logo=debian&logoColor=white" alt="Download the .deb package"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/.deb-amd64-A81D33?style=for-the-badge&logo=debian&logoColor=white" alt="Download the .deb package"></a>
       <br><sub>Debian, Ubuntu, Mint, Pop!_OS</sub>
       <br><br>
-      <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-3.0.0-arm64.AppImage"><img src="https://img.shields.io/badge/AppImage-ARM64-404040?style=for-the-badge&logo=linux&logoColor=white" alt="Download the ARM64 AppImage"></a>
+      <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest"><img src="https://img.shields.io/badge/AppImage-ARM64-404040?style=for-the-badge&logo=linux&logoColor=white" alt="Download the ARM64 AppImage"></a>
       <br><sub>Raspberry Pi and other ARM64</sub>
     </td>
   </tr>
 </table>
 
 <p align="center">
-  <sub><b>Version 3.0.0</b> · free, no account needed · <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/latest">release notes</a> · <a href="https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases">older versions</a></sub>
+  <sub>Every button opens the latest release, where the files are listed · free, no account needed · <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest">release notes</a> · <a href="https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases">older versions</a></sub>
 </p>
 
 <details>
@@ -230,7 +241,7 @@ Audio and video calls work like on messenger.com, in their own window. Screen sh
 
 **Installer**
 
-1. Download the [installer](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/download/v3.0.0/Messenger-Desktop-Unofficial-Setup-3.0.0.exe) and run it.
+1. Download the [installer](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest) and run it.
 2. If Windows shows **"Windows protected your PC"**, click **More info**, then **Run anyway**. The app is open source but not code-signed, which costs several hundred dollars a year.
 3. Follow the installer. The app opens when it's done and updates itself from then on.
 
@@ -367,7 +378,7 @@ Not yet. Log out and back in to switch accounts.
 
 <br>
 
-The Windows installer and the Linux AppImage check for updates by themselves and ask you to restart when one is ready. You can also check from **Settings → About** or the tray menu. On macOS, and for portable copies and the `.deb`, download the new version from the [Releases page](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/latest).
+The Windows installer and the Linux AppImage check for updates by themselves and ask you to restart when one is ready. You can also check from **Settings → About** or the tray menu. On macOS, and for portable copies and the `.deb`, download the new version from the [Releases page](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest).
 
 </details>
 
@@ -426,11 +437,11 @@ The Windows installer and the Linux AppImage check for updates by themselves and
 
 1. Check that it isn't already running in the tray.
 2. Restart your computer.
-3. Reinstall the latest version from the [Releases page](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/latest).
+3. Reinstall the latest version from the [Releases page](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest).
 
 </details>
 
-Still stuck? [Open an issue](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/issues) with what happened, what you tried and a screenshot if you can.
+Still stuck? [Open an issue](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/issues) with what happened, what you tried and a screenshot if you can.
 
 <br>
 
@@ -439,7 +450,7 @@ Still stuck? [Open an issue](https://github.com/WinTer1165/Messenger-Desktop-Cli
 You need [Node.js](https://nodejs.org/) 24 or newer.
 
 ```bash
-git clone https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial.git
+git clone https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial.git
 cd Messenger-Desktop-Client-Unofficial
 npm install
 
@@ -468,5 +479,7 @@ Contributions are welcome. Read the [Contributing Guidelines](CONTRIBUTING.md) f
 ## License
 
 [MIT](LICENSE). Built with [Electron](https://www.electronjs.org/).
+
+A fork of Messenger Desktop (Unofficial) by WinTer1165, whose work this builds on.
 
 Messenger Desktop is an unofficial app and is not affiliated with, endorsed by or connected to Meta Platforms, Inc. Messenger and Facebook are trademarks of Meta Platforms, Inc.

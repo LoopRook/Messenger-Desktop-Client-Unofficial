@@ -30,18 +30,18 @@ You don't need to write code to help:
 
 - **Report a bug** you hit while using the app
 - **Test a release** on a platform the maintainer can't easily reach (macOS, ARM Linux, Windows on ARM)
-- **Improve the docs** — the README, this file, or the [website](https://github.com/WinTer1165/Webpage-for-Messenger-Desktop-Client-Unofficial)
+- **Improve the docs** — the README or this file
 - **Fix a bug** or **build a feature** from the issue tracker
 - **Add a theme** — themes live in the renderer and are self-contained
 
 If you're looking for somewhere to start, check the
-[open issues](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/issues).
+[open issues](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/issues).
 
 ---
 
 ## Reporting Bugs
 
-Search the [existing issues](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/issues)
+Search the [existing issues](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/issues)
 first — someone may have already reported it.
 
 **Do not open a public issue for a security vulnerability.** Follow the
@@ -100,7 +100,7 @@ Facebook deploy.
 ### Getting started
 
 ```bash
-git clone https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial.git
+git clone https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial.git
 cd Messenger-Desktop-Client-Unofficial
 
 npm ci          # use `ci`, not `install`, to match the lockfile exactly
@@ -287,8 +287,8 @@ Removing them breaks auto-updates for everyone already on an older version.
 
 ## Questions
 
-- **Bugs and features:** [Issues](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/issues)
-- **Everything else:** [Discussions](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/discussions)
+- **Bugs and features:** [Issues](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/issues)
+- **Everything else:** [Discussions](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/discussions)
 - **Security vulnerabilities:** see [SECURITY.md](SECURITY.md) — do not open a public issue
 
 By contributing, you agree that your contributions will be licensed under the

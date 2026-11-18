@@ -35,21 +35,21 @@
 
   <launchable type="desktop-id">messenger-desktop-unofficial.desktop</launchable>
 
-  <url type="homepage">https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial</url>
-  <url type="bugtracker">https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/issues</url>
+  <url type="homepage">https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial</url>
+  <url type="bugtracker">https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/issues</url>
 
   <screenshots>
     <screenshot type="default">
       <caption>Settings, with the theme picker</caption>
-      <image>https://raw.githubusercontent.com/WinTer1165/Messenger-Desktop-Client-Unofficial/main/docs/screenshots/settings.png</image>
+      <image>https://raw.githubusercontent.com/LoopRook/Messenger-Desktop-Client-Unofficial/main/docs/screenshots/settings.png</image>
     </screenshot>
     <screenshot>
       <caption>The optional PIN lock</caption>
-      <image>https://raw.githubusercontent.com/WinTer1165/Messenger-Desktop-Client-Unofficial/main/docs/screenshots/lock.png</image>
+      <image>https://raw.githubusercontent.com/LoopRook/Messenger-Desktop-Client-Unofficial/main/docs/screenshots/lock.png</image>
     </screenshot>
     <screenshot>
       <caption>The offline screen, which reloads Messenger once you are back online</caption>
-      <image>https://raw.githubusercontent.com/WinTer1165/Messenger-Desktop-Client-Unofficial/main/docs/screenshots/offline.png</image>
+      <image>https://raw.githubusercontent.com/LoopRook/Messenger-Desktop-Client-Unofficial/main/docs/screenshots/offline.png</image>
     </screenshot>
   </screenshots>
 

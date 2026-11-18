@@ -133,8 +133,7 @@ jobs:
             release/latest*.yml
             release/*.blockmap
           draft: false
-          # Tags like v3.0.0-fork.1 are pre-releases
-          prerelease: ${{ contains(github.ref_name, '-') }}
+          prerelease: false
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

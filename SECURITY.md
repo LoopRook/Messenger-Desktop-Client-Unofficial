@@ -19,7 +19,7 @@ patched, so please update before reporting.
 
 Versions before 2.0.0 are Windows-only, predate the current sandboxing and
 auto-update work, and should be replaced rather than patched. The
-[latest release](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases/latest)
+[latest release](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases/latest)
 is always the supported one.
 
 ## Reporting a Vulnerability
@@ -27,13 +27,12 @@ is always the supported one.
 **Please do not open a public GitHub issue for a security vulnerability.**
 Public reports expose users who haven't updated yet.
 
-Report privately by email:
+Report privately with GitHub's **Security → Report a vulnerability** flow on
+this repository, which opens a private advisory visible only to the
+maintainers.
 
-**aminulislamlabib@gmail.com**, with `SECURITY` in the subject line.
-
-If private vulnerability reporting is enabled on this repository, you can also
-use GitHub's **Security → Report a vulnerability** flow, which opens a private
-advisory visible only to the maintainers.
+If the problem is also in the project this fork is based on, please report it
+there as well.
 
 ### What to include
 
@@ -100,7 +99,7 @@ These are deliberate trade-offs, not undisclosed vulnerabilities:
   will warn on first run. A trusted certificate costs several hundred dollars a
   year, which this project doesn't have. Verify downloads by only ever taking
   them from the
-  [official Releases page](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases).
+  [official Releases page](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases).
 - **macOS builds are not notarized**, so Gatekeeper blocks the first launch.
   Notarization requires a paid Apple Developer account. The README documents the
   right-click → Open workaround.
@@ -136,8 +135,7 @@ Contributors: the same rules are spelled out in
 A few things worth knowing:
 
 - **Only download from the
-  [official Releases page](https://github.com/WinTer1165/Messenger-Desktop-Client-Unofficial/releases)**
-  or the [project website](https://winter1165.github.io/Webpage-for-Messenger-Desktop-Client-Unofficial/).
+  [official Releases page](https://github.com/LoopRook/Messenger-Desktop-Client-Unofficial/releases)**.
   Builds from anywhere else are not ours.
 - **Keep the app updated.** It checks for updates automatically; you can also
   check manually from Settings or the tray menu.
