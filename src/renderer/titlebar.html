@@ -350,43 +350,7 @@
             display: flex;
             align-items: center;
             height: 100%;
-            /* The buttons keep their size; the brand gives way instead */
-            flex: none;
             -webkit-app-region: no-drag;
-        }
-
-        /* Narrow windows: the brand never runs underneath the buttons,
-           and the least needed pieces step aside one at a time - the
-           version, the name, then zoom (still on Ctrl +/-/0) and the
-           Facebook shortcut. The window can be as narrow as 400px. */
-        .brand {
-            flex: 0 1 auto;
-            overflow: hidden;
-        }
-
-        @media (max-width: 800px) {
-            .titlebar .version {
-                display: none;
-            }
-        }
-
-        @media (max-width: 680px) {
-            .titlebar .app-name {
-                display: none;
-            }
-        }
-
-        @media (max-width: 560px) {
-            .actions .zoom,
-            .actions > .divider {
-                display: none;
-            }
-        }
-
-        @media (max-width: 430px) {
-            .actions #facebook-btn {
-                display: none;
-            }
         }
 
         .toolbar {
