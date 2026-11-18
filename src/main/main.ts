@@ -98,6 +98,7 @@ import * as appLock from './app-lock';
 import { attachOverlays, setOverlay, isOverlayActive } from './overlays';
 import {
   closeMarketplace,
+  getMarketplaceView,
   hideMarketplace,
   initializeMarketplace,
   isMarketplaceShowing,
@@ -852,6 +853,10 @@ const callWindows = new Set<BrowserWindow>();
 function applyThemeToMessenger(): void {
   if (messengerView) {
     void applyMessengerTheme(messengerView.webContents, currentTheme);
+  }
+  const marketplaceView = getMarketplaceView();
+  if (marketplaceView) {
+    void applyMessengerTheme(marketplaceView.webContents, currentTheme);
   }
   for (const callWindow of callWindows) {
     void applyMessengerTheme(callWindow.webContents, currentTheme);
@@ -1632,6 +1637,9 @@ function initializeApp(): void {
       registerShortcuts(view.webContents);
       setupContextMenu(view);
       applyCurrentZoom(view);
+      view.webContents.on('dom-ready', () => {
+        void applyMessengerTheme(view.webContents, currentTheme, true);
+      });
     },
     onStateChange: (showing) => sendToRenderer('marketplace-state', showing),
   });
