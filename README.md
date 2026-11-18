@@ -32,6 +32,7 @@ This is a fork with a collapsible chat list, themes that cover Messenger itself,
 - **Themes cover Messenger itself**: chat list, conversation, menus and call windows, not only the title bar
 - **Mark all as read**: one button for every unread chat in the chat list
 - **Marketplace**: Facebook Marketplace in the window, while Messenger keeps running behind it
+- **Custom themes**: pick one color and get four ready-made themes to choose from, fine-tune them, and share them as a short code
 
 <br>
 
