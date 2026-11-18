@@ -99,5 +99,7 @@ deb:
 # Auto-update configuration (optional)
 publish:
   provider: github
-  owner: WinTer1165
+  # This fork's own releases: an installed copy must not update itself
+  # to an upstream build that lacks the fork's features
+  owner: LoopRook
   repo: Messenger-Desktop-Client-Unofficial
